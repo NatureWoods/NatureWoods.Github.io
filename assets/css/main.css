@@ -1425,12 +1425,12 @@ input, select, textarea {
 			margin-left: 90px;
 			font-size: 0.9em;
 			font-weight: 400;
-		}
-
+		}	
+		
 	.check-list li {
 		padding: 0.7em 0 0.7em 45px;
-		font-size: 1.2em;
-		background: url("images/icon-checkmark.png") 0px 1.05em no-repeat;
+		font-size: 1.2em;		
+		/*background: url("images/icon-checkmark.png") 0px 1.05em no-repeat;*/
 	}
 
 		.check-list li:first-child {
@@ -1505,6 +1505,43 @@ input, select, textarea {
 			background-image: linear-gradient(top, #ce1a00, #ed391b);
 			background-color: #ce1a00;
 			box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.75), inset 0px 2px 0px 0px rgba(255, 192, 192, 0.5), inset 0px 0px 0px 2px rgba(255, 96, 96, 0.85), 3px 3px 3px 1px rgba(0, 0, 0, 0.15);
+		}
+
+/* Icon */
+
+	.icon {
+		text-decoration: none;
+		border-bottom: none;
+		position: relative;
+	}
+
+		.icon:before {
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-font-smoothing: antialiased;
+			display: inline-block;
+			font-style: normal;
+			font-variant: normal;
+			text-rendering: auto;
+			line-height: 1;
+			text-transform: none !important;
+			font-family: 'Font Awesome 5 Free';
+			font-weight: 400;
+		}
+
+		.icon > .label {
+			display: none;
+		}
+
+		.icon:before {
+			line-height: inherit;
+		}
+
+		.icon.solid:before {
+			font-weight: 900;
+		}
+
+		.icon.brands:before {
+			font-family: 'Font Awesome 5 Brands';
 		}
 
 /* Header */
@@ -1696,6 +1733,43 @@ input, select, textarea {
 		#copyright a {
 			color: #8d9ca3;
 		}
+
+/* Icons */
+
+	ul.icons {
+		cursor: default;
+		list-style: none;
+		padding-left: 0;
+	}
+
+		ul.icons li {
+			display: inline-block;
+			padding: 0 0.5rem 0 0;
+			vertical-align: middle;
+		}
+
+			ul.icons li:last-child {
+				padding-right: 0;
+			}
+
+			ul.icons li .icon:before {
+				width: 2.25rem;
+				height: 2.25rem;
+				line-height: 2.25rem;
+				display: inline-block;
+				text-align: center;
+				border-radius: 100%;
+				font-size: 1.25rem;
+			}
+
+		ul.icons.alt li .icon:before {
+			-moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+			-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+			-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+			transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+			font-size: 1rem;
+		}
+
 
 /* Large */
 
